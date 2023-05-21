@@ -7,6 +7,8 @@ import org.testng.Reporter;
 
 import com.orangehrm.objectrepository.ObjectRepository;
 
+import java.io.IOException;
+
 public class OrangeHRMMyinfoPage {
 	
 	@FindBy(xpath=ObjectRepository.addedEmployeeProfileNameXpath)
@@ -20,10 +22,11 @@ public class OrangeHRMMyinfoPage {
 	WebElement employeeLoginMyinfoPersonalDetailsTab;
 	
 
-	public void userLoginProfileNameValidation(String employeeName) {
+	public void userLoginProfileNameValidation(String employeeName) throws InterruptedException {
 		
 		employeeLoginMyinfoTab.click();
 		employeeLoginMyinfoPersonalDetailsTab.click();
+		Thread.sleep(5000);
 		String actualName= addedEmployeeProfileName.getText();
 		String expectedName = employeeName;
 		if(actualName.equalsIgnoreCase(expectedName)) {

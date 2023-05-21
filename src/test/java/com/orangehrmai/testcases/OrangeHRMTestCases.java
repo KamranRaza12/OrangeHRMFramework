@@ -1,5 +1,6 @@
 package com.orangehrmai.testcases;
 
+import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
 import com.orangehrmai.driverscript.TestBase;
@@ -10,23 +11,25 @@ import com.orangehrmai.pages.OrangeHRMPimPage;
 
 import org.openqa.selenium.support.PageFactory;
 
-public class OrangeHRMTestCases extends TestBase{
+import java.io.FileInputStream;
+import java.io.IOException;
+import java.util.Properties;
 
-	//Parameterizing input values
-	public String adminUsername ="Admin";
-	public String adminPassword ="admin123";
-	public String employeeFirstName ="Wolves";
-	public String employeeLastName ="M";
-	public String employeeId ="";
-	public String employeeUsername ="Wolves";
-	public String employeePassword ="wolves123";
+public class OrangeHRMTestCases extends TestBase{
+	public static FileInputStream fis;
+	public static Properties config = new Properties();
+	@BeforeClass
+	public void readData() throws IOException {
+		fis = new FileInputStream(System.getProperty("user.dir")+"\\src\\test\\java\\com\\orangehrmai\\driverscript\\testData.properties");
+		config.load(fis);
+	}
 	@Test(priority=1)
 	public void adminLoginAndLogoutValidation() {
 		
 		OrangeHRMLoginPage loginPage = PageFactory.initElements(driver, OrangeHRMLoginPage.class);
 		OrangeHRMHomePage homePage = PageFactory.initElements(driver, OrangeHRMHomePage.class);
 		
-		loginPage.userLogin(adminUsername, adminPassword);
+		loginPage.userLogin(config.getProperty("adminUsername"), config.getProperty("adminPassword"));
 		homePage.homePageTitleValidation();
 		homePage.logout();
 		loginPage.loginPageTitleValidation();
@@ -39,29 +42,26 @@ public class OrangeHRMTestCases extends TestBase{
 		OrangeHRMHomePage homePage = PageFactory.initElements(driver, OrangeHRMHomePage.class);
 		OrangeHRMPimPage pimPage = PageFactory.initElements(driver, OrangeHRMPimPage.class);
 
-		loginPage.userLogin(adminUsername, adminPassword);
+		loginPage.userLogin(config.getProperty("adminUsername"), config.getProperty("adminPassword"));
 		homePage.homePageTitleValidation();
 		pimPage.pimTitleValidation();
-		pimPage.addEmployeeNameAndId(employeeFirstName, employeeLastName, employeeId);
-		pimPage.addEmployeeCredentials(employeeUsername, employeePassword);
-		pimPage.addedEmployeeProfileNameValidation(employeeFirstName+" "+employeeLastName);
+		pimPage.addEmployeeNameAndId(config.getProperty("employeeFirstName"), config.getProperty("employeeLastName"), config.getProperty("employeeId"));
+		pimPage.addEmployeeCredentials(config.getProperty("employeeUsername"), config.getProperty("employeePassword"));
 		homePage.logout();
 	}
 	
 	@Test(priority=3)
-	public void employeeLoginAndLogoutValidation() {
+	public void employeeLoginAndLogoutValidation() throws InterruptedException {
 		
 		OrangeHRMLoginPage loginPage = PageFactory.initElements(driver, OrangeHRMLoginPage.class);
 		OrangeHRMHomePage homePage = PageFactory.initElements(driver, OrangeHRMHomePage.class);
 		OrangeHRMMyinfoPage myInfoPage = PageFactory.initElements(driver, OrangeHRMMyinfoPage.class);
 		
-		loginPage.userLogin(employeeUsername, employeePassword);
-		myInfoPage.userLoginProfileNameValidation(employeeFirstName+" "+employeeLastName);
+		loginPage.userLogin(config.getProperty("employeeUsername"), config.getProperty("employeePassword"));
+		myInfoPage.userLoginProfileNameValidation(config.getProperty("employeeUsername")+" "+config.getProperty("employeeLastName"));
 		homePage.logout();
 		loginPage.loginPageTitleValidation();
 	}
 
-
-	
 }
 

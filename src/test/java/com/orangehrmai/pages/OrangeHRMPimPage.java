@@ -105,10 +105,12 @@ public class OrangeHRMPimPage {
 		Reporter.log("New Employee Added Successfully");
 	}
 	
-	public void addedEmployeeProfileNameValidation(String employeeName) {
-		String actuaName= addedEmployeeProfileName.getText();
+	public void addedEmployeeProfileNameValidation(String employeeName) throws InterruptedException{
+
+		Thread.sleep(5000);
+		String actualName= addedEmployeeProfileName.getText();
 		String expectedName = employeeName;
-		if(actuaName.equals(expectedName)) {
+		if(actualName.equals(expectedName)) {
 			System.out.println("New Employee name is displayed");
 			Reporter.log("New Employee name is displayed");
 		}else {
