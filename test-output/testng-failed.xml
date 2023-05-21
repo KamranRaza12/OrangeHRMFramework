@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.nxtgenai.testcases.OrangeHRMTestCases">
+      <class name="com.orangehrmai.testcases.OrangeHRMTestCases">
         <methods>
           <include name="setUp"/>
           <include name="tearDown"/>
           <include name="employeeLoginAndLogoutValidation"/>
         </methods>
-      </class> <!-- com.nxtgenai.testcases.OrangeHRMTestCases -->
+      </class> <!-- com.orangehrmai.testcases.OrangeHRMTestCases -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

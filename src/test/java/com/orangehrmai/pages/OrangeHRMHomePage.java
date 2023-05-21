@@ -1,4 +1,4 @@
-package com.nxtgenai.pages;
+package com.orangehrmai.pages;
 
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.CacheLookup;
@@ -23,7 +23,7 @@ public class OrangeHRMHomePage {
 	
 	public void homePageTitleValidation() {		
 		String actualTitle = homePageHeading.getText();
-		System.out.println(actualTitle);
+		//System.out.println(actualTitle);
 		String expectedTitle = "Dashboard";
 		if(actualTitle.equals(expectedTitle)) {
 			System.out.println("Dashboard Heading is displayed");

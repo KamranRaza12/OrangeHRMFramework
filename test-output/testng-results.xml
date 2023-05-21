@@ -9,8 +9,8 @@
     <groups>
     </groups>
     <test started-at="2023-05-21T18:05:37 IST" name="Default test" finished-at="2023-05-21T18:05:37 IST" duration-ms="59">
-      <class name="com.nxtgenai.testcases.OrangeHRMTestCases">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.nxtgenai.testcases.OrangeHRMTestCases@39ad977d]" started-at="2023-05-21T18:04:46 IST" name="setUp" finished-at="2023-05-21T18:05:37 IST" duration-ms="51578" status="FAIL">
+      <class name="com.orangehrmai.testcases.OrangeHRMTestCases">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.orangehrmai.testcases.OrangeHRMTestCases@39ad977d]" started-at="2023-05-21T18:04:46 IST" name="setUp" finished-at="2023-05-21T18:05:37 IST" duration-ms="51578" status="FAIL">
           <exception class="org.openqa.selenium.NoSuchWindowException">
             <message>
               <![CDATA[no such window: target window already closed
@@ -23,7 +23,7 @@ Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 1
 Session ID: e87745cdd0809fe3e1a4aa4ea27e77be]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+                <![CDATA[org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
 from unknown error: web view not found
   (Session info: chrome=113.0.5672.127)
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
@@ -43,7 +43,7 @@ at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverComman
 at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
 at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:609)
 at org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions$RemoteWindow.maximize(RemoteWebDriver.java:837)
-at com.nxtgenai.driverscript.TestBase.setUp(TestBase.java:61)
+at com.orangehrmai.driverscript.TestBase.setUp(TestBase.java:61)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -72,7 +72,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
             </line>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="employeeLoginAndLogoutValidation()[pri:3, instance:com.nxtgenai.testcases.OrangeHRMTestCases@39ad977d]" started-at="2023-05-21T18:05:37 IST" name="employeeLoginAndLogoutValidation" finished-at="2023-05-21T18:05:37 IST" duration-ms="0" status="SKIP">
+        <test-method signature="employeeLoginAndLogoutValidation()[pri:3, instance:com.orangehrmai.testcases.OrangeHRMTestCases@39ad977d]" started-at="2023-05-21T18:05:37 IST" name="employeeLoginAndLogoutValidation" finished-at="2023-05-21T18:05:37 IST" duration-ms="0" status="SKIP">
           <exception class="org.openqa.selenium.NoSuchWindowException">
             <message>
               <![CDATA[no such window: target window already closed
@@ -85,7 +85,7 @@ Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 1
 Session ID: e87745cdd0809fe3e1a4aa4ea27e77be]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+                <![CDATA[org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
 from unknown error: web view not found
   (Session info: chrome=113.0.5672.127)
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
@@ -105,7 +105,7 @@ at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverComman
 at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
 at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:609)
 at org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions$RemoteWindow.maximize(RemoteWebDriver.java:837)
-at com.nxtgenai.driverscript.TestBase.setUp(TestBase.java:61)
+at com.orangehrmai.driverscript.TestBase.setUp(TestBase.java:61)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -131,11 +131,11 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- employeeLoginAndLogoutValidation -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.nxtgenai.testcases.OrangeHRMTestCases@39ad977d]" started-at="2023-05-21T18:05:37 IST" name="tearDown" finished-at="2023-05-21T18:05:37 IST" duration-ms="0" status="SKIP">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.orangehrmai.testcases.OrangeHRMTestCases@39ad977d]" started-at="2023-05-21T18:05:37 IST" name="tearDown" finished-at="2023-05-21T18:05:37 IST" duration-ms="0" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- com.nxtgenai.testcases.OrangeHRMTestCases -->
+      </class> <!-- com.orangehrmai.testcases.OrangeHRMTestCases -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

@@ -1,24 +1,32 @@
-package com.nxtgenai.testcases;
+package com.orangehrmai.testcases;
 
 import org.testng.annotations.Test;
 
-import com.nxtgenai.driverscript.TestBase;
-import com.nxtgenai.pages.OrangeHRMHomePage;
-import com.nxtgenai.pages.OrangeHRMLoginPage;
-import com.nxtgenai.pages.OrangeHRMMyinfoPage;
-import com.nxtgenai.pages.OrangeHRMPimPage;
+import com.orangehrmai.driverscript.TestBase;
+import com.orangehrmai.pages.OrangeHRMHomePage;
+import com.orangehrmai.pages.OrangeHRMLoginPage;
+import com.orangehrmai.pages.OrangeHRMMyinfoPage;
+import com.orangehrmai.pages.OrangeHRMPimPage;
 
 import org.openqa.selenium.support.PageFactory;
 
 public class OrangeHRMTestCases extends TestBase{
-	
+
+	//Parameterizing input values
+	public String adminUsername ="Admin";
+	public String adminPassword ="admin123";
+	public String employeeFirstName ="Wolves";
+	public String employeeLastName ="M";
+	public String employeeId ="";
+	public String employeeUsername ="Wolves";
+	public String employeePassword ="wolves123";
 	@Test(priority=1)
 	public void adminLoginAndLogoutValidation() {
 		
 		OrangeHRMLoginPage loginPage = PageFactory.initElements(driver, OrangeHRMLoginPage.class);
 		OrangeHRMHomePage homePage = PageFactory.initElements(driver, OrangeHRMHomePage.class);
 		
-		loginPage.userLogin("Admin", "admin123");
+		loginPage.userLogin(adminUsername, adminPassword);
 		homePage.homePageTitleValidation();
 		homePage.logout();
 		loginPage.loginPageTitleValidation();
@@ -31,12 +39,12 @@ public class OrangeHRMTestCases extends TestBase{
 		OrangeHRMHomePage homePage = PageFactory.initElements(driver, OrangeHRMHomePage.class);
 		OrangeHRMPimPage pimPage = PageFactory.initElements(driver, OrangeHRMPimPage.class);
 
-		loginPage.userLogin("Admin", "admin123");
+		loginPage.userLogin(adminUsername, adminPassword);
 		homePage.homePageTitleValidation();
 		pimPage.pimTitleValidation();
-		pimPage.addEmployeeNameAndId("Wolves", "M", "");
-		pimPage.addEmployeeCredentials("Wolves", "wolves123");
-		pimPage.addedEmployeeProfileNameValidation("Wolves M");
+		pimPage.addEmployeeNameAndId(employeeFirstName, employeeLastName, employeeId);
+		pimPage.addEmployeeCredentials(employeeUsername, employeePassword);
+		pimPage.addedEmployeeProfileNameValidation(employeeFirstName+" "+employeeLastName);
 		homePage.logout();
 	}
 	
@@ -47,8 +55,8 @@ public class OrangeHRMTestCases extends TestBase{
 		OrangeHRMHomePage homePage = PageFactory.initElements(driver, OrangeHRMHomePage.class);
 		OrangeHRMMyinfoPage myInfoPage = PageFactory.initElements(driver, OrangeHRMMyinfoPage.class);
 		
-		loginPage.userLogin("Wolves", "wolves123");
-		myInfoPage.userLoginProfileNameValidation("Wolves M");
+		loginPage.userLogin(employeeUsername, employeePassword);
+		myInfoPage.userLoginProfileNameValidation(employeeFirstName+" "+employeeLastName);
 		homePage.logout();
 		loginPage.loginPageTitleValidation();
 	}

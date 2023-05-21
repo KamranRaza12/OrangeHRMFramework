@@ -1,4 +1,4 @@
-package com.nxtgenai.pages;
+package com.orangehrmai.pages;
 
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.CacheLookup;
@@ -108,12 +108,12 @@ public class OrangeHRMPimPage {
 	public void addedEmployeeProfileNameValidation(String employeeName) {
 		String actuaName= addedEmployeeProfileName.getText();
 		String expectedName = employeeName;
-		if(actuaName.equalsIgnoreCase(expectedName)) {
-			System.out.println("New Employee added successfully");
-			Reporter.log("New Employee added successfully");
+		if(actuaName.equals(expectedName)) {
+			System.out.println("New Employee name is displayed");
+			Reporter.log("New Employee name is displayed");
 		}else {
-			System.out.println("New Employee not added");
-			Reporter.log("New Employee not added");
+			System.out.println("New Employee name is not displayed");
+			Reporter.log("New Employee name is not displayed");
 		}
 		
 	}

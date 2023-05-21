@@ -1,9 +1,8 @@
-package com.nxtgenai.listeners;
+package com.orangehrmai.listeners;
 
 import java.io.IOException;
 
 import java.util.Date;
-import java.util.Properties;
 
 import org.testng.ITestContext;
 import org.testng.ITestListener;
@@ -16,9 +15,9 @@ import com.aventstack.extentreports.Status;
 import com.aventstack.extentreports.markuputils.ExtentColor;
 import com.aventstack.extentreports.markuputils.Markup;
 import com.aventstack.extentreports.markuputils.MarkupHelper;
-import com.nxtgenai.driverscript.TestBase;
-import com.nxtgenai.utilities.ExtentManager;
-import com.nxtgenai.utilities.TestUtil;
+import com.orangehrmai.driverscript.TestBase;
+import com.orangehrmai.utilities.ExtentManager;
+import com.orangehrmai.utilities.TestUtil;
 
 
 public class CustomListeners extends TestBase implements ITestListener {

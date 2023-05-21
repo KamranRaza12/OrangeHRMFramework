@@ -1,4 +1,4 @@
-package com.nxtgenai.pages;
+package com.orangehrmai.pages;
 
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.CacheLookup;
@@ -24,11 +24,11 @@ public class OrangeHRMMyinfoPage {
 		
 		employeeLoginMyinfoTab.click();
 		employeeLoginMyinfoPersonalDetailsTab.click();
-		String actuaName= addedEmployeeProfileName.getText();
+		String actualName= addedEmployeeProfileName.getText();
 		String expectedName = employeeName;
-		if(actuaName.equalsIgnoreCase(expectedName)) {
-			System.out.println("Employee Name is :-"+actuaName);
-			Reporter.log("Employee Name is :-"+actuaName);
+		if(actualName.equalsIgnoreCase(expectedName)) {
+			System.out.println("Employee Name is :-"+actualName);
+			Reporter.log("Employee Name is :-"+actualName);
 		}else {
 			System.out.println("Employee name is not displayed");
 			Reporter.log("Employee name is not displayed");

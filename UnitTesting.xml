@@ -3,12 +3,12 @@
 <suite parallel="false" name="NxtGen AI Automation Suite">
 
 	<listeners>
-		<listener class-name="com.nxtgenai.listeners.CustomListeners" />
+		<listener class-name="com.orangehrmai.listeners.CustomListeners" />
 	</listeners>
 
 	<test name="Regression Suite">
 		<classes>
-		    <class name="com.nxtgenai.testcases.HandlingMouseEvent" /> 	
+		    <class name="com.orangehrmai.testcases.HandlingMouseEvent" />
 		</classes>
 	</test> <!-- testng.xml -->	
 

@@ -1,4 +1,4 @@
-package com.nxtgenai.utilities;
+package com.orangehrmai.utilities;
 
 import java.io.File;
 import java.io.IOException;
@@ -11,7 +11,7 @@ import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.testng.annotations.DataProvider;
 
-import com.nxtgenai.driverscript.TestBase;
+import com.orangehrmai.driverscript.TestBase;
 
 public class TestUtil extends TestBase {
 

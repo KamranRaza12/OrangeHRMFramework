@@ -1,4 +1,4 @@
-package com.nxtgenai.driverscript;
+package com.orangehrmai.driverscript;
 
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
@@ -17,7 +17,7 @@ import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeSuite;
 
 
-import com.nxtgenai.utilities.ExcelReader;
+import com.orangehrmai.utilities.ExcelReader;
 
 
 public class TestBase {
@@ -32,7 +32,7 @@ public class TestBase {
 	public WebDriver setUp() throws IOException{
 
 		try {
-			fis = new FileInputStream(System.getProperty("user.dir") + "\\src\\test\\java\\com\\nxtgenai\\driverscript\\configuration.properties");
+			fis = new FileInputStream(System.getProperty("user.dir") + "\\src\\test\\java\\com\\orangehrmai\\driverscript\\configuration.properties");
 			config.load(fis);
 			Reporter.log("Configuration File Loaded Successfully");
 		} catch (FileNotFoundException e) {
