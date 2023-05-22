@@ -47,6 +47,7 @@ public class OrangeHRMTestCases extends TestBase{
 		pimPage.pimTitleValidation();
 		pimPage.addEmployeeNameAndId(config.getProperty("employeeFirstName"), config.getProperty("employeeLastName"), config.getProperty("employeeId"));
 		pimPage.addEmployeeCredentials(config.getProperty("employeeUsername"), config.getProperty("employeePassword"));
+		pimPage.addedEmployeeProfileNameValidation(config.getProperty("employeeUsername")+" "+config.getProperty("employeeLastName"));
 		homePage.logout();
 	}
 	
