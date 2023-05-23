@@ -57,7 +57,8 @@ public class OrangeHRMTestCases extends TestBase{
 		OrangeHRMLoginPage loginPage = PageFactory.initElements(driver, OrangeHRMLoginPage.class);
 		OrangeHRMHomePage homePage = PageFactory.initElements(driver, OrangeHRMHomePage.class);
 		OrangeHRMMyinfoPage myInfoPage = PageFactory.initElements(driver, OrangeHRMMyinfoPage.class);
-		
+
+
 		loginPage.userLogin(config.getProperty("employeeUsername"), config.getProperty("employeePassword"));
 		myInfoPage.userLoginProfileNameValidation(config.getProperty("employeeUsername")+" "+config.getProperty("employeeLastName"));
 		homePage.logout();
