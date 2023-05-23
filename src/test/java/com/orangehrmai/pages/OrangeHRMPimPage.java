@@ -107,8 +107,9 @@ public class OrangeHRMPimPage {
 	
 	public void addedEmployeeProfileNameValidation(String employeeName) throws InterruptedException{
 
-		Thread.sleep(5000);
+		//Thread.sleep(5000);
 		String actualName= addedEmployeeProfileName.getText();
+		Thread.sleep(5000);
 		String expectedName = employeeName;
 		if(actualName.equals(expectedName)) {
 			System.out.println("New Employee name is displayed");
