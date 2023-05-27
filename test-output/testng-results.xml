@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
+<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
   <reporter-output>
     <line>
       <![CDATA[Configuration File Loaded Successfully]]>
@@ -8,7 +8,7 @@
       <![CDATA[User logged in Successfully]]>
     </line>
     <line>
-      <![CDATA[Dashboard Heading is displayed]]>
+      <![CDATA[Dashboard heading is displayed]]>
     </line>
     <line>
       <![CDATA[User Logged Out Successfully]]>
@@ -20,10 +20,13 @@
       <![CDATA[User logged in Successfully]]>
     </line>
     <line>
-      <![CDATA[Dashboard Heading is displayed]]>
+      <![CDATA[Dashboard heading is displayed]]>
     </line>
     <line>
-      <![CDATA[PIM Heading is displayed]]>
+      <![CDATA[PIM button clicked]]>
+    </line>
+    <line>
+      <![CDATA[PIM heading is displayed]]>
     </line>
     <line>
       <![CDATA[New Employee Added Successfully]]>
@@ -47,32 +50,62 @@
       <![CDATA[Login Heading is displayed]]>
     </line>
     <line>
+      <![CDATA[User logged in Successfully]]>
+    </line>
+    <line>
+      <![CDATA[Dashboard heading is displayed]]>
+    </line>
+    <line>
+      <![CDATA[PIM button clicked]]>
+    </line>
+    <line>
+      <![CDATA[PIM heading is displayed]]>
+    </line>
+    <line>
+      <![CDATA[Reports button is clicked]]>
+    </line>
+    <line>
+      <![CDATA[Employee reports page is displayed]]>
+    </line>
+    <line>
+      <![CDATA[0002]]>
+    </line>
+    <line>
+      <![CDATA[Adalwin]]>
+    </line>
+    <line>
+      <![CDATA[Odis]]>
+    </line>
+    <line>
+      <![CDATA[Chief Technical Officer]]>
+    </line>
+    <line>
       <![CDATA[Application Closed Successfully]]>
     </line>
   </reporter-output>
-  <suite started-at="2023-05-23T15:12:12 IST" name="Orange HRM Automation Suite" finished-at="2023-05-23T15:12:55 IST" duration-ms="42806">
+  <suite started-at="2023-05-27T13:48:33 IST" name="Orange HRM Automation Suite" finished-at="2023-05-27T13:49:26 IST" duration-ms="52448">
     <groups>
     </groups>
-    <test started-at="2023-05-23T15:12:12 IST" name="Regression Suite" finished-at="2023-05-23T15:12:55 IST" duration-ms="42806">
+    <test started-at="2023-05-27T13:48:33 IST" name="Regression Suite" finished-at="2023-05-27T13:49:26 IST" duration-ms="52448">
       <class name="com.orangehrmai.testcases.OrangeHRMTestCases">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.orangehrmai.testcases.OrangeHRMTestCases@f9879ac]" started-at="2023-05-23T15:12:02 IST" name="setUp" finished-at="2023-05-23T15:12:12 IST" duration-ms="10008" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.orangehrmai.testcases.OrangeHRMTestCases@5fd62371]" started-at="2023-05-27T13:48:23 IST" name="setUp" finished-at="2023-05-27T13:48:33 IST" duration-ms="10619" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[Configuration File Loaded Successfully]]>
             </line>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method is-config="true" signature="readData()[pri:0, instance:com.orangehrmai.testcases.OrangeHRMTestCases@f9879ac]" started-at="2023-05-23T15:12:12 IST" name="readData" finished-at="2023-05-23T15:12:12 IST" duration-ms="2" status="PASS">
+        <test-method is-config="true" signature="readData()[pri:0, instance:com.orangehrmai.testcases.OrangeHRMTestCases@5fd62371]" started-at="2023-05-27T13:48:33 IST" name="readData" finished-at="2023-05-27T13:48:33 IST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- readData -->
-        <test-method signature="adminLoginAndLogoutValidation()[pri:1, instance:com.orangehrmai.testcases.OrangeHRMTestCases@f9879ac]" started-at="2023-05-23T15:12:12 IST" name="adminLoginAndLogoutValidation" finished-at="2023-05-23T15:12:18 IST" duration-ms="5916" status="PASS">
+        <test-method signature="adminLoginAndLogoutValidation()[pri:1, instance:com.orangehrmai.testcases.OrangeHRMTestCases@5fd62371]" started-at="2023-05-27T13:48:33 IST" name="adminLoginAndLogoutValidation" finished-at="2023-05-27T13:48:39 IST" duration-ms="5664" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[User logged in Successfully]]>
             </line>
             <line>
-              <![CDATA[Dashboard Heading is displayed]]>
+              <![CDATA[Dashboard heading is displayed]]>
             </line>
             <line>
               <![CDATA[User Logged Out Successfully]]>
@@ -82,16 +115,19 @@
             </line>
           </reporter-output>
         </test-method> <!-- adminLoginAndLogoutValidation -->
-        <test-method signature="addNewEmployee()[pri:2, instance:com.orangehrmai.testcases.OrangeHRMTestCases@f9879ac]" started-at="2023-05-23T15:12:19 IST" name="addNewEmployee" finished-at="2023-05-23T15:12:40 IST" duration-ms="21759" status="PASS">
+        <test-method signature="addNewEmployee()[pri:2, instance:com.orangehrmai.testcases.OrangeHRMTestCases@5fd62371]" started-at="2023-05-27T13:48:39 IST" name="addNewEmployee" finished-at="2023-05-27T13:48:59 IST" duration-ms="20193" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[User logged in Successfully]]>
             </line>
             <line>
-              <![CDATA[Dashboard Heading is displayed]]>
+              <![CDATA[Dashboard heading is displayed]]>
             </line>
             <line>
-              <![CDATA[PIM Heading is displayed]]>
+              <![CDATA[PIM button clicked]]>
+            </line>
+            <line>
+              <![CDATA[PIM heading is displayed]]>
             </line>
             <line>
               <![CDATA[New Employee Added Successfully]]>
@@ -104,7 +140,7 @@
             </line>
           </reporter-output>
         </test-method> <!-- addNewEmployee -->
-        <test-method signature="employeeLoginAndLogoutValidation()[pri:3, instance:com.orangehrmai.testcases.OrangeHRMTestCases@f9879ac]" started-at="2023-05-23T15:12:41 IST" name="employeeLoginAndLogoutValidation" finished-at="2023-05-23T15:12:55 IST" duration-ms="14305" status="PASS">
+        <test-method signature="employeeLoginAndLogoutValidation()[pri:3, instance:com.orangehrmai.testcases.OrangeHRMTestCases@5fd62371]" started-at="2023-05-27T13:49:00 IST" name="employeeLoginAndLogoutValidation" finished-at="2023-05-27T13:49:12 IST" duration-ms="12510" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[User logged in Successfully]]>
@@ -120,7 +156,41 @@
             </line>
           </reporter-output>
         </test-method> <!-- employeeLoginAndLogoutValidation -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.orangehrmai.testcases.OrangeHRMTestCases@f9879ac]" started-at="2023-05-23T15:12:56 IST" name="tearDown" finished-at="2023-05-23T15:12:56 IST" duration-ms="414" status="PASS">
+        <test-method signature="getEmployeeDetailsReport()[pri:4, instance:com.orangehrmai.testcases.OrangeHRMTestCases@5fd62371]" started-at="2023-05-27T13:49:12 IST" name="getEmployeeDetailsReport" finished-at="2023-05-27T13:49:26 IST" duration-ms="13288" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[User logged in Successfully]]>
+            </line>
+            <line>
+              <![CDATA[Dashboard heading is displayed]]>
+            </line>
+            <line>
+              <![CDATA[PIM button clicked]]>
+            </line>
+            <line>
+              <![CDATA[PIM heading is displayed]]>
+            </line>
+            <line>
+              <![CDATA[Reports button is clicked]]>
+            </line>
+            <line>
+              <![CDATA[Employee reports page is displayed]]>
+            </line>
+            <line>
+              <![CDATA[0002]]>
+            </line>
+            <line>
+              <![CDATA[Adalwin]]>
+            </line>
+            <line>
+              <![CDATA[Odis]]>
+            </line>
+            <line>
+              <![CDATA[Chief Technical Officer]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- getEmployeeDetailsReport -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.orangehrmai.testcases.OrangeHRMTestCases@5fd62371]" started-at="2023-05-27T13:49:26 IST" name="tearDown" finished-at="2023-05-27T13:49:27 IST" duration-ms="397" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[Application Closed Successfully]]>

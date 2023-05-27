@@ -41,8 +41,24 @@ public class ObjectRepository {
 	public static final String addEmployeeEnabledRadioButton="//label[normalize-space()='Enabled']";
 	public static final String addedEmployeeProfileNameXpath="//*[@id='app']/div[1]/div[2]/div[2]/div/div/div/div[1]/div[1]/div[1]/h6";
 
+	public static final String reportsButtonXpath="//*[@id='app']/div[1]/div[1]/header/div[2]/nav/ul/li[4]/a";
+
+	public static final String reportsTitleXpath="//*[text()='Employee Reports']";
+
+	public static final String reportEmployeeJobDetailsTableButtonXpath="//*[@id='app']/div[1]/div[2]/div[2]/div/div[2]/div[3]/div/div[2]/div[3]/div/div[3]/div/button[3]/i";
+
 	//Employee Login Myinfo Page OR
 	public static final String myInfoTabXpath="//*[@id='app']/div[1]/div[1]/aside/nav/div[2]/ul/li[3]/a/span";
 	public static final String myInfoPersonalDetailsXpath="//*[@id='app']/div[1]/div[2]/div[2]/div/div/div/div[1]/div[2]/div[1]/a";
+
+
+	//EmployeeTable OR
+
+	public static final String tableXpath="//*[@class='rgRow']";
+	public static final String baseXpath="//*[@style='height: 32px; transform: translateY(";
+	public static final String employeeIdBaseXpath="px);']//*[1]";
+	public static final String employeeLastNameBaseXpath="px);']//*[2]";
+	public static final String employeeFirstNameBaseXpath="px);']//*[3]";
+	public static final String employeeJobTitleBaseXpath="px);']//*[6]";
 
 }

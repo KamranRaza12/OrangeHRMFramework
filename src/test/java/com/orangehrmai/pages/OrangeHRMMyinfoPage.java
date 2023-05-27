@@ -1,5 +1,6 @@
 package com.orangehrmai.pages;
 
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.CacheLookup;
 import org.openqa.selenium.support.FindBy;
@@ -10,6 +11,10 @@ import com.orangehrm.objectrepository.ObjectRepository;
 import java.io.IOException;
 
 public class OrangeHRMMyinfoPage {
+	public WebDriver driver;
+	public OrangeHRMMyinfoPage(WebDriver driver) {
+		this.driver = driver;
+	}
 	
 	@FindBy(xpath=ObjectRepository.addedEmployeeProfileNameXpath)
 	@CacheLookup

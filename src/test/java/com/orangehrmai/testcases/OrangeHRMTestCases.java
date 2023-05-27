@@ -1,13 +1,10 @@
 package com.orangehrmai.testcases;
 
+import com.orangehrmai.pages.*;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
 import com.orangehrmai.driverscript.TestBase;
-import com.orangehrmai.pages.OrangeHRMHomePage;
-import com.orangehrmai.pages.OrangeHRMLoginPage;
-import com.orangehrmai.pages.OrangeHRMMyinfoPage;
-import com.orangehrmai.pages.OrangeHRMPimPage;
 
 import org.openqa.selenium.support.PageFactory;
 
@@ -63,6 +60,27 @@ public class OrangeHRMTestCases extends TestBase{
 		myInfoPage.userLoginProfileNameValidation(config.getProperty("employeeUsername")+" "+config.getProperty("employeeLastName"));
 		homePage.logout();
 		loginPage.loginPageTitleValidation();
+	}
+
+	@Test(priority=4)
+	public void getEmployeeDetailsReport() throws Exception {
+		OrangeHRMLoginPage loginPage = PageFactory.initElements(driver, OrangeHRMLoginPage.class);
+		OrangeHRMHomePage homePage = PageFactory.initElements(driver, OrangeHRMHomePage.class);
+		OrangeHRMPimPage pimPage = PageFactory.initElements(driver, OrangeHRMPimPage.class);
+		OrangeHRMGetEmployeeDetails getData = PageFactory.initElements(driver, OrangeHRMGetEmployeeDetails.class);
+
+		loginPage.userLogin(config.getProperty("adminUsername"), config.getProperty("adminPassword"));
+		homePage.homePageTitleValidation();
+		pimPage.pimTitleValidation();
+		pimPage.clickReports();
+		pimPage.clickEmployeeJobDetailsReports();
+
+		getData.getTableDetails();
+
+
+		Thread.sleep(5000);
+
+
 	}
 
 }

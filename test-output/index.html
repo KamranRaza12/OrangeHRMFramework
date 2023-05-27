@@ -92,7 +92,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">3 methods,   3 passed</span>
+                    <span class="method-stats">4 methods,   4 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -114,6 +114,11 @@
                       <span>
                         <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Orange_HRM_Automation_Suite" title="com.orangehrmai.testcases.OrangeHRMTestCases" class="method navigator-link" hash-for-method="employeeLoginAndLogoutValidation">employeeLoginAndLogoutValidation</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Orange_HRM_Automation_Suite" title="com.orangehrmai.testcases.OrangeHRMTestCases" class="method navigator-link" hash-for-method="getEmployeeDetailsReport">getEmployeeDetailsReport</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Orange_HRM_Automation_Suite -->
@@ -153,6 +158,13 @@
                   <a name="employeeLoginAndLogoutValidation">
                   </a> <!-- employeeLoginAndLogoutValidation -->
                   <span class="method-name">employeeLoginAndLogoutValidation</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="getEmployeeDetailsReport">
+                  </a> <!-- getEmployeeDetailsReport -->
+                  <span class="method-name">getEmployeeDetailsReport</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -212,24 +224,28 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(3);
+data.addRows(4);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'addNewEmployee')
 data.setCell(0, 2, 'com.orangehrmai.testcases.OrangeHRMTestCases')
-data.setCell(0, 3, 21759);
+data.setCell(0, 3, 20193);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'employeeLoginAndLogoutValidation')
+data.setCell(1, 1, 'getEmployeeDetailsReport')
 data.setCell(1, 2, 'com.orangehrmai.testcases.OrangeHRMTestCases')
-data.setCell(1, 3, 14305);
+data.setCell(1, 3, 13288);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'adminLoginAndLogoutValidation')
+data.setCell(2, 1, 'employeeLoginAndLogoutValidation')
 data.setCell(2, 2, 'com.orangehrmai.testcases.OrangeHRMTestCases')
-data.setCell(2, 3, 5916);
+data.setCell(2, 3, 12510);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'adminLoginAndLogoutValidation')
+data.setCell(3, 2, 'com.orangehrmai.testcases.OrangeHRMTestCases')
+data.setCell(3, 3, 5664);
 window.suiteTableData['Orange_HRM_Automation_Suite']= { tableData: data, tableDiv: 'times-div-Orange_HRM_Automation_Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 41 seconds</span>
+              <span class="suite-total-time">Total running time: 51 seconds</span>
               <div id="times-div-Orange_HRM_Automation_Suite">
               </div> <!-- times-div-Orange_HRM_Automation_Suite -->
             </div> <!-- times-div -->
@@ -244,9 +260,36 @@ return data;
               <span class="reporter-method-name">adminLoginAndLogoutValidation</span>
               <div class="reporter-method-output-div">
                 <span class="reporter-method-output">User logged in Successfully</span>
-                <span class="reporter-method-output">Dashboard Heading is displayed</span>
+                <span class="reporter-method-output">Dashboard heading is displayed</span>
                 <span class="reporter-method-output">User Logged Out Successfully</span>
                 <span class="reporter-method-output">Login Heading is displayed</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">getEmployeeDetailsReport</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">User logged in Successfully</span>
+                <span class="reporter-method-output">Dashboard heading is displayed</span>
+                <span class="reporter-method-output">PIM button clicked</span>
+                <span class="reporter-method-output">PIM heading is displayed</span>
+                <span class="reporter-method-output">Reports button is clicked</span>
+                <span class="reporter-method-output">Employee reports page is displayed</span>
+                <span class="reporter-method-output">0002</span>
+                <span class="reporter-method-output">Adalwin</span>
+                <span class="reporter-method-output">Odis</span>
+                <span class="reporter-method-output">Chief Technical Officer</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">addNewEmployee</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">User logged in Successfully</span>
+                <span class="reporter-method-output">Dashboard heading is displayed</span>
+                <span class="reporter-method-output">PIM button clicked</span>
+                <span class="reporter-method-output">PIM heading is displayed</span>
+                <span class="reporter-method-output">New Employee Added Successfully</span>
+                <span class="reporter-method-output">New Employee name is not displayed</span>
+                <span class="reporter-method-output">User Logged Out Successfully</span>
               </div> <!-- reporter-method-output-div -->
             </div> <!-- reporter-method-div -->
             <div class="reporter-method-div">
@@ -256,17 +299,6 @@ return data;
                 <span class="reporter-method-output">Employee name is not displayed</span>
                 <span class="reporter-method-output">User Logged Out Successfully</span>
                 <span class="reporter-method-output">Login Heading is displayed</span>
-              </div> <!-- reporter-method-output-div -->
-            </div> <!-- reporter-method-div -->
-            <div class="reporter-method-div">
-              <span class="reporter-method-name">addNewEmployee</span>
-              <div class="reporter-method-output-div">
-                <span class="reporter-method-output">User logged in Successfully</span>
-                <span class="reporter-method-output">Dashboard Heading is displayed</span>
-                <span class="reporter-method-output">PIM Heading is displayed</span>
-                <span class="reporter-method-output">New Employee Added Successfully</span>
-                <span class="reporter-method-output">New Employee name is not displayed</span>
-                <span class="reporter-method-output">User Logged Out Successfully</span>
               </div> <!-- reporter-method-output-div -->
             </div> <!-- reporter-method-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -291,23 +323,27 @@ return data;
               </div> <!-- configuration-suite before -->
               <div class="configuration-class before">
                 <span class="method-name">readData</span>
-                <span class="method-start">10083 ms</span>
+                <span class="method-start">10655 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">adminLoginAndLogoutValidation</span>
-                <span class="method-start">10105 ms</span>
+                <span class="method-start">10670 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">addNewEmployee</span>
-                <span class="method-start">16383 ms</span>
+                <span class="method-start">16582 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">employeeLoginAndLogoutValidation</span>
-                <span class="method-start">38321 ms</span>
+                <span class="method-start">36915 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">getEmployeeDetailsReport</span>
+                <span class="method-start">49604 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-suite after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">53693 ms</span>
+                <span class="method-start">63480 ms</span>
               </div> <!-- configuration-suite after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

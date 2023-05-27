@@ -13,7 +13,6 @@ import com.orangehrm.objectrepository.ObjectRepository;
 
 
 public class OrangeHRMLoginPage {
-
 	public WebDriver driver;
 	public Actions mouseHover;
 

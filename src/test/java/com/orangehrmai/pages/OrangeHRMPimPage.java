@@ -1,6 +1,9 @@
 package com.orangehrmai.pages;
 
+import org.openqa.selenium.Keys;
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.CacheLookup;
 import org.openqa.selenium.support.FindBy;
 import org.testng.Reporter;
@@ -9,6 +12,10 @@ import com.orangehrm.objectrepository.ObjectRepository;
 
 public class OrangeHRMPimPage {
 
+	public static WebDriver driver;
+	public void OrangeHRMPimPage(WebDriver driver){
+		this.driver=driver;
+	}
 	@FindBy(xpath=ObjectRepository.pimButtonXpath) 
 	@CacheLookup
 	WebElement pimButton;
@@ -60,6 +67,18 @@ public class OrangeHRMPimPage {
 	@FindBy(xpath=ObjectRepository.addedEmployeeProfileNameXpath)
 	@CacheLookup
 	WebElement addedEmployeeProfileName;
+
+	@FindBy(xpath=ObjectRepository.reportsButtonXpath)
+	@CacheLookup
+	WebElement reportsButton;
+
+	@FindBy(xpath=ObjectRepository.reportsTitleXpath)
+	@CacheLookup
+	WebElement reportsPageTitle;
+
+	@FindBy(xpath = ObjectRepository.reportEmployeeJobDetailsTableButtonXpath)
+	@CacheLookup
+	WebElement reportEmployeeJobDetailsTableButton;
 	
 	
 	
@@ -67,15 +86,16 @@ public class OrangeHRMPimPage {
 	
 	public void pimTitleValidation() {
 		pimButton.click();
-		System.out.println("pim button clicked");
+		System.out.println("PIM button clicked");
+		Reporter.log("PIM button clicked");
 		String actualTitle = pimHeading.getText();
 		String expectedTitle = "PIM";
 		if(actualTitle.equals(expectedTitle)) {
-			System.out.println("PIM Heading is displayed");
-			Reporter.log("PIM Heading is displayed");
+			System.out.println("PIM heading is displayed");
+			Reporter.log("PIM heading is displayed");
 		}else {
-			System.out.println("PIM Heading is not displayed");
-			Reporter.log("PIM Heading is not displayed");
+			System.out.println("PIM heading is not displayed");
+			Reporter.log("PIM heading is not displayed");
 		}
 	}
 	
@@ -121,4 +141,23 @@ public class OrangeHRMPimPage {
 		
 	}
 
+	public void clickReports(){
+		reportsButton.click();
+		System.out.println("Reports button is clicked");
+		Reporter.log("Reports button is clicked");
+		String actualTitle=reportsPageTitle.getText();
+		String expectedTitle="Employee Reports";
+		if(actualTitle.equals(expectedTitle)){
+			System.out.println("Employee reports page is displayed");
+			Reporter.log("Employee reports page is displayed");
+		}else {
+			System.out.println("Employee reports page is not displayed");
+			Reporter.log("Employee reports page is not displayed");
+		}
+
+	}
+
+	public void clickEmployeeJobDetailsReports(){
+		reportEmployeeJobDetailsTableButton.click();
+	}
 }
